@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enregistrement d'équipe</title>
+    <script src="Validation.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_team.css">
+    <style>
+        @font-face {
+            font-family: 'Cyberpunk';
+            src: url('https://your-cyberpunk-font-link.woff')format('woff');
+        }
+    </style>
+</head>
+<body>
+    <div class="circuit-background">
+        <div class="circuit-lines"></div>
+        <div class="circuit-dots"></div>
+    </div>
+    <div class="container">
+        <h1>Inscription Equipe Hackathon</h1>
+        <form action="Register.php" method="post" id="teamForm">
+            <label for="teamName">Nom de l'équipe</label>
+            <input type="text" name="teamName" id="teamName" required placeholder="Entrez le nom de votre équipe">
+
+            <label for="paiement">Paiement (en XAF)</label>
+            <input type="text" id="paiement" name="paiement" required placeholder="Montant payé">
+
+            <button type="button" onclick="validateAndSubmit()">Valider</button>
+        </form>
+    </div>
+    <div class="signature">Made by 697</div>
+</body>
+</html>
