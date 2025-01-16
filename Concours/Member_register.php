@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect ("localhost", "root", "", "Concours");
+    $conn = mysqli_connect ("localhost", "root", "", "participants_concours");
     $nom = $_REQUEST['nom'];
     $prénom = $_REQUEST['prénom'];
 
@@ -8,7 +8,7 @@
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
-        header ("location:...");
+        header ("location:Register.php");
     } else {
         echo "Echec de l'insertion !";
     };

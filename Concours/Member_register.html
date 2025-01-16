@@ -1,9 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter des Membres</title>
-    <script src="Member_register.js"></script>
     <link rel="stylesheet" href="style_member.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -24,15 +24,20 @@
         <form action="Member_register.php" method="post" id="Member_register">
             <div id="membersContainer">
                 <div class="member">
+                    <h3>Membre 1</h3>
                     <label for="Nom1">Nom</label>
                     <input type="text" id="Nom1" name="Nom1" required placeholder="Entrez votre nom">
                     <label for="Prénom1">Prénom</label>
                     <input type="text" id="Prénom1" name="Prénom1" required placeholder="Entrez votre prénom">
                 </div>
             </div>
-            <button type="button" id="addMember" onclick="addMember()">Ajouter un membre</button>
-            <button type="submit">Enregistrer l'équipe</button>
+            <div class="btn-grp">
+                <button type="button" id="addMemberButton" onclick="addMember()">Ajouter un membre</button>
+                <button type="submit">Enregistrer l'équipe</button>
+            </div>
         </form>
     </div>
+    <div class="signature">Made by 697</div>
+    <script src="Member_register.js"></script>
 </body>
 </html>
