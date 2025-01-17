@@ -1,14 +1,14 @@
 <?php
     $conn = mysqli_connect ("localhost", "root", "", "participants_concours");
-    $nom = $_REQUEST['nom'];
-    $prénom = $_REQUEST['prénom'];
+    $nom = $_REQUEST['Nom'];
+    $prénom = $_REQUEST['Prénom'];
 
-    $sql = INSERT INTO `membre_equipe`(`Nom`, `Prénom`, `Matricule_Equipe`) VALUES ($nom, $prénom, null);
+    $sql = "INSERT INTO `membre_equipe`(`Nom`, `Prénom`, `Matricule_Equipe`) VALUES ('$nom', '$prénom', null)";
 
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
-        header ("location:Register.php");
+        header ("location:Liste.php");
     } else {
         echo "Echec de l'insertion !";
     };
